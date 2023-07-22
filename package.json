@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "dependencies": {
+    "prettier": "^3.0.0",
+    "simple-dynamo-utils": "^1.0.9"
+  },
+  "name": "code-writer",
+  "description": "a simple query code builder for dynamodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhijeetSingla/code-writer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhijeetSingla/code-writer/issues"
+  },
+  "homepage": "https://github.com/AbhijeetSingla/code-writer#readme"
+}
