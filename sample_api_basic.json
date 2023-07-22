@@ -1,0 +1,33 @@
+[
+    {
+        "file_name": "journals",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_journal",
+        "access_type": "get",
+        "partition_key": "journal_id"
+    },
+    {
+        "file_name": "indexing",
+        "table_name": "journals-india",
+        "function_access_name": "get_indexing",
+        "access_type": "get",
+        "partition_key": "indexing_id"
+    },
+    {
+        "file_name": "journals",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_all_journals",
+        "access_type": "scan",
+        "workers": 10
+    },
+    {
+        "file_name": "journals",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_all_journals_index",
+        "access_type": "scan",
+        "index_name": "global_index"
+    }
+]

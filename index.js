@@ -2,7 +2,7 @@ import { format } from 'prettier'
 import { createWriteStream } from 'fs'
 import { generate_get_code, generate_scan_code } from './parameters.js'
 
-import structure from './api_basic.json' assert { type: "json" };
+import structure from './sample_api_basic.json' assert { type: "json" };
 
 const file_strings = {}
 const base_location = './generated_code_output/'
