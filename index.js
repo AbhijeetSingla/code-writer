@@ -13,6 +13,9 @@ for (let index = 0; index < structure.length; index++) {
         file_strings[file_name] = ''
     }
     switch (access_type) {
+        case 'scan':
+            file_strings[file_name] += generate_scan_code(rest)
+            break;
     
         case 'get':
             file_strings[file_name] += generate_get_code(rest)
