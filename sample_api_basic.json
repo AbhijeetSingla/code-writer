@@ -8,11 +8,19 @@
         "partition_key": "journal_id"
     },
     {
-        "file_name": "indexing",
+        "file_name": "journals",
         "table_name": "journals-india",
-        "function_access_name": "get_indexing",
-        "access_type": "get",
-        "partition_key": "indexing_id"
+        "attributes_to_get": "none",
+        "function_access_name": "delete_journal",
+        "access_type": "delete",
+        "partition_key": "journal_id"
+    },
+    {
+        "file_name": "journals",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "create_journal",
+        "access_type": "put"
     },
     {
         "file_name": "journals",
@@ -28,6 +36,121 @@
         "attributes_to_get": "all",
         "function_access_name": "get_all_journals_index",
         "access_type": "scan",
-        "index_name": "global_index"
+        "index_name": "global_index",
+        "workers": 25
+    },
+    {
+        "file_name": "assignees",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_assignee",
+        "access_type": "get",
+        "partition_key": "assignee_id"
+    },
+    {
+        "file_name": "assignees",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "delete_assignee",
+        "access_type": "delete",
+        "partition_key": "assignee_id"
+    },
+    {
+        "file_name": "assignees",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "create_assignee",
+        "access_type": "put"
+    },
+    {
+        "file_name": "dealers",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_dealer",
+        "access_type": "get",
+        "partition_key": "dealer_id"
+    },
+    {
+        "file_name": "dealers",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "delete_dealer",
+        "access_type": "delete",
+        "partition_key": "dealer_id"
+    },
+    {
+        "file_name": "dealers",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "create_dealer",
+        "access_type": "put"
+    },
+    {
+        "file_name": "users",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_user",
+        "access_type": "get",
+        "partition_key": "user_id"
+    },
+    {
+        "file_name": "users",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "delete_user",
+        "access_type": "delete",
+        "partition_key": "user_id"
+    },
+    {
+        "file_name": "users",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "create_user",
+        "access_type": "put"
+    },
+    {
+        "file_name": "users",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_all_users",
+        "access_type": "scan"
+    },
+    {
+        "file_name": "clone_journals",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_clone_journal",
+        "access_type": "get",
+        "partition_key": "clone_journal_id"
+    },
+    {
+        "file_name": "clone_journals",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "delete_clone_journal",
+        "access_type": "delete",
+        "partition_key": "clone_journal_id"
+    },
+    {
+        "file_name": "clone_journals",
+        "table_name": "journals-india",
+        "attributes_to_get": "none",
+        "function_access_name": "create_clone_journal",
+        "access_type": "put"
+    },
+    {
+        "file_name": "clone_journals",
+        "table_name": "journals-india",
+        "attributes_to_get": "all",
+        "function_access_name": "get_all_clone_journals",
+        "access_type": "scan",
+        "workers": 10
+    },
+    {
+        "file_name": "indexing",
+        "table_name": "journals-india",
+        "function_access_name": "get_indexing",
+        "access_type": "get",
+        "partition_key": "indexing_id"
     }
 ]
