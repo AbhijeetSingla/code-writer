@@ -130,3 +130,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 generated_code_output/*
+.DS_Store
